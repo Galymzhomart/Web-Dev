@@ -1,0 +1,333 @@
+/* Общие сбросы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1f2328;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- HEADER --- */
+.github-header {
+    background-color: #ffffff;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header-left img{
+    width: 36px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 16px;
+}
+
+.nav-links a:hover {
+    color: #585858;
+}
+
+.search-wrapper {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    padding: 4px 12px;
+}
+
+.search-wrapper input {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+    font-size: 18px;
+    width: 360px;
+}
+
+.slash-key {
+    border: 1px solid #57606a;
+    border-radius: 3px;
+    padding: 0 4px;
+    font-size: 12px;
+    color: #57606a;
+}
+.divider{
+    margin-top: -2px;
+    color: #000000ae;
+    font-size: 26px;
+}
+
+.nav-btn {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-btn-outline {
+    border: 1px solid rgb(203, 203, 203);
+    padding: 5px 12px;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.hero__description {
+    font-size: 14px;
+    color: #636c76;
+    max-width: 800px;
+    margin: 0 auto 32px;
+}
+
+/* --- BUTTONS --- */
+.button {
+    background-color: #1f2328;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid rgba(27, 31, 36, 0.15);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button--secondary {
+    background-color: #f6f8fa;
+    color: #1f2328;
+    border: 1px solid #d0d7de;
+}
+
+/* --- PRICING CARDS --- */
+.pricing__cards {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 80px;
+    align-items: stretch;
+}
+
+.plan-card {
+    flex: 1;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card__name {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.plan-card__tagline {
+    font-size: 14px;
+    color: #636c76;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.plan-card__price {
+    margin-bottom: 24px;
+}
+
+.plan-card__price strong {
+    font-size: 40px;
+}
+
+.plan-card__price span {
+    font-size: 12px;
+    color: #636c76;
+    display: block;
+}
+
+.plan-card__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.plan-card__actions .button {
+    flex: 1;
+    padding: 10px 15px;
+    white-space: nowrap;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-card__divider {
+    height: 1px;
+    background: #d0d7de;
+    margin: 0 -24px 24px;
+}
+
+.plan-card__subheading {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-list li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.check {
+    color: #1a7f37;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .pricing__cards {
+        flex-direction: column;
+    }
+    .hero__title {
+        font-size: 32px;
+    }
+}
+
+/* --- СЕКЦИЯ ADD-ONS --- */
+.addons {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.addons__title {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -1.5px;
+}
+
+
+
+/* Сетка 3 колонки */
+.addons__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 11fr); /* Три равные колонки */
+    gap: 24px;
+}
+
+.addon-card {
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 32px;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease;
+}
+
+.addon-card:hover {
+    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+    padding: 38px;
+}
+
+.addon-card__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+    background-color: #f6f8fa; /* Цвет фона для иконок */
+}
+
+.addon-card__name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.addon-card__text {
+    font-size: 14px;
+    color: #636c76;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.addon-card__link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2328;
+    text-decoration: none;
+}
+
+.addon-card__link:hover {
+    text-decoration: underline;
+}
+
+/* Бейдж "New" */
+.badge {
+    font-size: 12px;
+    color: #1a7f37;
+    border: 1px solid #1a7f37;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-weight: 400;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 992px) {
+    .addons__grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+    }
+}
+
+@media (max-width: 600px) {
+    .addons__grid {
+        grid-template-columns: 1fr; /* 1 колонка на телефонах */
+    }
+    .addons__title {
+        font-size: 32px;
+    }
+}

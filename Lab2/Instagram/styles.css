@@ -1,0 +1,235 @@
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    gap: 32px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1500px;
+    border: 2px solid #dbdbdb;
+    margin: -8px;
+}
+
+
+
+.mini-logo {
+    width: 72px;
+    margin-bottom: -40px;
+    text-align: left; 
+}
+
+.mockup-section {
+    max-width: 800px;
+}
+.mockup-section h1 span {
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mockup-section h1{
+    text-align: center;
+    font-family: "Times New Roman", Georgia, 'Times New Roman', Times, serif;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 44px;
+    letter-spacing: -1.5px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.mockup-content h1 span {
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+    color: transparent; 
+    
+    display: inline-block; 
+}
+
+.images-stack img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+}
+
+
+
+
+.auth-section {
+    margin-right: -44px;
+    margin-top: -28px;
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: white;
+    border: 2px solid #dbdbdb;
+    padding: 80px 52px;
+}
+
+.logo-text {
+    font-size: 18.5px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+input, button {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input {
+    gap: 6px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-right: 12px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 550;
+    
+}
+input:focus{
+    outline: none;
+    border-color: #0095f6;
+    box-shadow: 0 0 0 2px rgb(227, 227, 227);
+}
+
+button {
+    /* width: 554px; */
+    border: none;
+    border-radius: 30px;
+    margin-top: 8px;
+    font-weight: 600;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: #0095f6;
+    color: white;
+}
+.btn-login:hover {
+    background-color: #1877f2;
+}
+
+.forgot-password {
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #ffffff;
+    margin-bottom: 28px;
+}
+.forgot-password:hover {
+    background-color: #efefef;
+}
+
+
+.btn-fb {
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+    color: #385185;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:-8px;
+}
+.btn-fb img {
+    width: 16px;
+}
+.btn-fb:hover{
+    background-color: #f5f5f5;
+    border-color: #0095f6;
+    box-shadow: 0 0 0 2px rgb(227, 227, 227);
+
+}
+
+.btn_create{
+    font-size: 14px;
+    border: 2px solid #0095f6;
+    background-color: #ffffff;
+    color: #0095f6;
+
+}
+.btn_create:hover{
+    border: 2px solid #f8f8f8;
+    background-color: #0095f6;
+    color: #ffffff;
+}
+
+
+
+.meta-logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.meta-logo img {
+    width: 60px;
+    opacity: 0.6;
+}
+
+
+
+
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #8e8e8e;
+    margin: 0 8px;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #8e8e8e;
+    margin: 0 14px;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
+/* Адаптивность */
+@media (max-width: 875px) {
+    .mockup-section {
+        display: none;
+    }
+}

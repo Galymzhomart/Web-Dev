@@ -1,0 +1,204 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 910px;
+}
+
+.main-wrapper {
+    flex: 1; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    width: 980px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-content {
+    
+    flex: 1;
+    padding-right: 32px;
+    margin-top: -180px;
+}
+
+.facebook {
+    color: rgb(24, 119, 242);
+    font-size: 60px;   
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: -20px;
+}
+.slogan {
+    font-size: 28px;
+    line-height: 32px;
+
+}
+
+
+
+.rigth-content{
+    width: 400px;
+}
+
+.box{
+    width: 360px;
+    height: 320px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    align-items: center;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 6px;
+    font-size: 16.5px;
+    
+}
+input:focus{
+    outline: none;
+    border-color: rgb(24, 119, 242);
+    box-shadow: 0 0 0 2px rgb(227, 227, 227);
+}
+
+.login-btn {
+    width: 100%;
+    background-color: rgb(24, 119, 242);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.login-btn:hover {
+    background-color: rgb(22, 111, 229);
+}
+
+.forgot-password {
+    color: rgb(24, 119, 242);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+
+.divider {
+    border: 0;
+    border-top: 1px solid rgb(218, 221, 225);
+    margin-bottom: 20px;
+}
+
+
+
+.create-btn {
+    background-color: rgb(66, 183, 42);
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.create-btn:hover {
+    background-color: rgb(54, 164, 32);
+}
+
+
+.page-create-text {
+    width: 400px;
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+}
+.page-create-text a{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.page-create-text a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #fff;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.footer-content {
+    width: 980px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    color: #737373;
+    font-size: 12px;
+}
+
+footer a {
+    color: #737373;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.plus-btn {
+    font-size: 18px;
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    color: #4b4f569d;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.plus-btn:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.footer-links{
+    word-spacing: 3px;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #dddfe2;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
